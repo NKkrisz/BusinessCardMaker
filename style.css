@@ -95,5 +95,6 @@ button{
     }
     #card, #card *{
         visibility: visible;
+        background-color: var(--bg-color);
     }
 }
