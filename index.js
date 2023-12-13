@@ -1,6 +1,6 @@
 document.querySelectorAll("input").forEach((input) => {
     input.addEventListener("input", () => {
-        console.log(input.id, input.value, input.type, input);
+        // console.log(input.id, input.value, input.type, input);
         
         if(input.type == "text"){
             document.querySelector(`#${input.id}-card`).innerText = input.value;

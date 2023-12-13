@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Business Card Maker</title>
     <link rel="stylesheet" href="style.css">
+    <style type="text/css" media="print">
+        .noPrint { display: none; }
+    </style>
 </head>
 <body>
     <div id="cardMaker">
-        <h1>Business Card</h1>
+        <h1 class="noPrint">Business Card</h1>
+
         <div id="wholeCard">
             <div id="alignVertical">
                 <div id="card">
@@ -16,38 +20,40 @@
                     <p id="job-card"></p>
                     <img id="photo-card" src="" alt="">
                 </div>
-                <input type="range" id="image-vertical" orient="vertical" max="50">
+                <input type="range" id="image-vertical" class="noPrint" orient="vertical" max="50">
             </div>
-            <input type="range" id="image-horizontal" max="50">
+            <input type="range" id="image-horizontal" class="noPrint" max="50">
         </div>
-        <div id="inputs">
-            <label for="name">Name:</label>
-            <input id="name" type="text" placeholder="Name">
-            <label for="job">Job:</label>
-            <input id="job" type="text" placeholder="Job">
-            <label for="photo">Photo:</label>
-            <input id="photo" type="file" placeholder="Photo" accept="image/*">
-            <button>Print</button>
+
+        <div id="inputs" class="noPrint">
+            <label class="noPrint" for="name">Name:</label>
+            <input class="noPrint" id="name" type="text" placeholder="Name">
+            <label class="noPrint" for="job">Job:</label>
+            <input class="noPrint" id="job" type="text" placeholder="Job">
+            <label class="noPrint" for="photo">Photo:</label>
+            <input class="noPrint" id="photo" type="file" placeholder="Photo" accept="image/*">
+            <button class="noPrint" onclick="print()">Print</button>
         </div>
-        <div id="variables">
+
+        <div id="variables" class="noPrint">
             <div class="colorSelector">
-                <label for="bg-color">Background color:</label>
-                <input id="bg-color" type="color" value="#000000">
+                <label class="noPrint" for="bg-color">Background color:</label>
+                <input class="noPrint" id="bg-color" type="color" value="#000000">
             </div>
             <div class="colorSelector">
-                <label for="text-color">Text color:</label>
-                <input id="text-color" type="color" value="#000000">
+                <label class="noPrint" for="text-color">Text color:</label>
+                <input class="noPrint" id="text-color" type="color" value="#000000">
             </div>
             <div class="colorSelector">
-                <label for="border-color">Border color:</label>
-                <input id="border-color" type="color" value="#000000">
+                <label class="noPrint" for="border-color">Border color:</label>
+                <input class="noPrint" id="border-color" type="color" value="#000000">
             </div>
-            <label for="border-size">Border size:</label>
-            <input id="border-size" type="range" min="0" max="50" value="10">
-            <label for="font-size">Font size:</label>
-            <input id="font-size" type="range" min="0" max="50" value="16">
-            <label for="border-radius">Border radius:</label>
-            <input id="border-radius" type="range" min="0" max="50" value="10">
+            <label class="noPrint" for="border-size">Border size:</label>
+            <input class="noPrint" id="border-size" type="range" min="0" max="50" value="10">
+            <label class="noPrint" for="font-size">Font size:</label>
+            <input class="noPrint" id="font-size" type="range" min="0" max="50" value="16">
+            <label class="noPrint" for="border-radius">Border radius:</label>
+            <input class="noPrint" id="border-radius" type="range" min="0" max="50" value="10">
         </div>
     </div>
 
