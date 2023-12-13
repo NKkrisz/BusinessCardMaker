@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1a1a1a;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+#cardMaker{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    background-color: #333333;
+    border-radius: 5px;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+#inputs, #variables{
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+#card{
+    display: flex;
+    width: 100%;
+    height: 200px;
+    background: black;
+}
+
+.colorSelector{
+    display: flex;
+    justify-content: space-between;
+}

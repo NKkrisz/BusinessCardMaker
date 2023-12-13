@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Card Maker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="cardMaker">
+        <h1>Business Card</h1>
+        <div id="card"></div>
+        <div id="inputs">
+            <label for="name">Name:</label>
+            <input id="name" type="text" placeholder="Name">
+            <label for="job">Job:</label>
+            <input id="job" type="text" placeholder="Job">
+            <label for="photo">Photo:</label>
+            <input id="photo" type="file" placeholder="Photo" accept="image/*">
+            <button>Submit</button>
+        </div>
+        <div id="variables">
+            <div class="colorSelector">
+                <label for="bg-color">Background color:</label>
+                <input id="bg-color" type="color">
+            </div>
+            <div class="colorSelector">
+                <label for="text-color">Text color:</label>
+                <input id="text-color" type="color">
+            </div>
+            <div class="colorSelector">
+                <label for="border-color">Border color:</label>
+                <input id="border-color" type="color">
+            </div>
+            <label for="border-size">Border size:</label>
+            <input id="border-size" type="range" min="0" max="50" value="10">
+            <label for="font-size">Font size:</label>
+            <input id="font-size" type="range" min="0" max="50" value="16">
+            <label for="border-radius">Border radius:</label>
+            <input id="border-radius" type="range" min="0" max="50" value="10">
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
