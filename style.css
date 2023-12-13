@@ -87,3 +87,13 @@ button{
     margin-left: auto;
     margin-right: auto;
 }
+
+@media print{
+    body, body *{
+        visibility: hidden;
+        background-color: white;
+    }
+    #card, #card *{
+        visibility: visible;
+    }
+}
