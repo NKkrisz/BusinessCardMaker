@@ -9,9 +9,16 @@
 <body>
     <div id="cardMaker">
         <h1>Business Card</h1>
-        <div id="card">
-            <p id="name-card"></p>
-            <p id="job-card"></p>
+        <div id="wholeCard">
+            <div id="alignVertical">
+                <div id="card">
+                    <p id="name-card"></p>
+                    <p id="job-card"></p>
+                    <img id="photo-card" src="" alt="">
+                </div>
+                <input type="range" id="image-vertical" orient="vertical" max="50">
+            </div>
+            <input type="range" id="image-horizontal" max="50">
         </div>
         <div id="inputs">
             <label for="name">Name:</label>

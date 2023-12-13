@@ -11,6 +11,8 @@
     --border-radius: 10px;
     --border-size: 10px;
     --font-size: 16;
+    --image-horizontal: 10px;
+    --image-vertical: 10px;
 }
 
 body{
@@ -39,8 +41,19 @@ body{
     gap: 0.25rem;
 }
 
+#wholeCard{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#alignVertical{
+    display: flex;
+}
+
 #card{
     display: flex;
+    flex-direction: column;
     width: 100%;
     height: 200px;
     word-break: break-all;
@@ -49,6 +62,15 @@ body{
     border-radius: var(--border-radius);
     border: var(--border-size) solid var(--border-color);
     font-size: var(--font-size);
+    position: relative;
+    padding: 0.5rem;
+}
+
+#photo-card{
+    max-width: 150px;
+    position: absolute;
+    bottom: var(--image-vertical);
+    left: var(--image-horizontal);
 }
 
 .colorSelector{
