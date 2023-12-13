@@ -9,7 +9,10 @@
 <body>
     <div id="cardMaker">
         <h1>Business Card</h1>
-        <div id="card"></div>
+        <div id="card">
+            <p id="name-card"></p>
+            <p id="job-card"></p>
+        </div>
         <div id="inputs">
             <label for="name">Name:</label>
             <input id="name" type="text" placeholder="Name">
@@ -17,20 +20,20 @@
             <input id="job" type="text" placeholder="Job">
             <label for="photo">Photo:</label>
             <input id="photo" type="file" placeholder="Photo" accept="image/*">
-            <button>Submit</button>
+            <button>Print</button>
         </div>
         <div id="variables">
             <div class="colorSelector">
                 <label for="bg-color">Background color:</label>
-                <input id="bg-color" type="color">
+                <input id="bg-color" type="color" value="#000000">
             </div>
             <div class="colorSelector">
                 <label for="text-color">Text color:</label>
-                <input id="text-color" type="color">
+                <input id="text-color" type="color" value="#000000">
             </div>
             <div class="colorSelector">
                 <label for="border-color">Border color:</label>
-                <input id="border-color" type="color">
+                <input id="border-color" type="color" value="#000000">
             </div>
             <label for="border-size">Border size:</label>
             <input id="border-size" type="range" min="0" max="50" value="10">

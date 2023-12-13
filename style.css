@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+:root{
+    --bg-color: white;
+    --text-color: black;
+    --border-color: black;
+    --border-radius: 10px;
+    --border-size: 10px;
+    --font-size: 16;
+}
+
 body{
     background-color: #1a1a1a;
     color: white;
@@ -34,10 +43,25 @@ body{
     display: flex;
     width: 100%;
     height: 200px;
-    background: black;
+    word-break: break-all;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border-radius: var(--border-radius);
+    border: var(--border-size) solid var(--border-color);
+    font-size: var(--font-size);
 }
 
 .colorSelector{
     display: flex;
     justify-content: space-between;
+}
+
+input[type="text"]{
+    padding: 0.25rem;
+}
+
+button{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
